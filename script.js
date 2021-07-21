@@ -1,9 +1,14 @@
 //getScheduleText to show on textarea after you save
 let getScheduleText = function (hour) {
   let schedule = JSON.parse(window.localStorage.getItem("schedule"));
-  for (let i = 0; i < schedule.length; i++) {
-    if (schedule[i].hour == hour) {
-      return schedule[i].text;
+
+  if (!schedule) {
+    schedule = [];
+  } else {
+    for (let i = 0; i < schedule.length; i++) {
+      if (schedule[i].hour == hour) {
+        return schedule[i].text;
+      }
     }
   }
   return "";
@@ -72,21 +77,3 @@ let saveEvent = function (hour) {
 };
 //JSON convert from string to object
 console.log(JSON.parse(window.localStorage.getItem("schedule")));
-
-let car = "honda";
-let list = [];
-list.push(car);
-list.push("Text");
-list.push(true);
-list.push(true);
-let dictionary = {
-  word: "bug",
-  page: 1,
-};
-
-list[0];
-
-list.push(dictionary);
-list = ["honda", "Text", true, true, { word: "bug", page: 1 }];
-list[4].word;
-dictionary.page;
