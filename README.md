@@ -40,7 +40,7 @@ List the ready features here:
 
 ## Screenshots
 
-![Example screenshot](.\Assets\05-third-party-apis-homework-demo.gif)
+![Example screenshot](https://github.com/kabaothao/Day-Planner/blob/main/Assets/05-third-party-apis-homework-demo.gif)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
